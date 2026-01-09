@@ -10,7 +10,7 @@
 
   /* lofi background, very pretty, found online free to use (pretty sure it is AI) */
   /* GitHub Pages fix: use bundled asset path (put image in src/assets/background.jpg) */
-  background-image: url("./assets/background.jpg");
+  background-image: url("/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
