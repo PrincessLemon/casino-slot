@@ -76,14 +76,15 @@ export default function App() {
 
   // Create audio objects once (GitHub Pages-safe paths using BASE_URL)
   useEffect(() => {
-    const BASE = import.meta.env.BASE_URL; // e.g. "/casino-slot/"
+const BASE = import.meta.env.BASE_URL;
 
-    spinSfxRef.current = new Audio(`${BASE}audio/spinbutton.wav`);
-    winSfxRef.current = new Audio(`${BASE}audio/win.wav`);
+spinSfxRef.current = new Audio(`${BASE}audio/spinbutton.wav`);
+winSfxRef.current = new Audio(`${BASE}audio/win.wav`);
 
-    const music = new Audio(`${BASE}audio/background.mp3`);
-    music.loop = true;
-    musicRef.current = music;
+const music = new Audio(`${BASE}audio/background.mp3`);
+music.loop = true;
+musicRef.current = music;
+
 
     return () => {
       try {
