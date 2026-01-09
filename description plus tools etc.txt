@@ -1,0 +1,40 @@
+What I built and how far I got
+
+I created a slot machine web app called “Lofi Slot” using React + Vite. The app contains:
+
+* 3 reels with 12 symbols each.
+* A Spin button that animates the reels and stops them one by one.
+* Win logic that checks for 2 or 3 matching symbols on a line.
+* Credits + Bet system (optional feature).
+* Extra win lines toggle (optional feature): when enabled, the game checks top + center + bottom lines and the spin costs more (cost = bet × number of lines).
+* Sound effects + background music (optional eye candy, cuz we all love that little extra spark :D): spin SFX, win SFX, and looping background music with volume controls.
+* A lofi background image (background.jpg) and a styled UI layout similar to the project example.
+
+Status: The game is playable end-to-end (spin → stop → evaluate win → update credits), with UI, audio, and optional mechanics implemented.
+
+Tools used + progression / issues
+
+Development tools:
+
+* Visual Studio Code (obviouslyyy)
+* Node.js + npm
+* Vite (React template)
+* Chrome/Edge DevTools for debugging UI + console messages, and checking how it would look with different screens
+* Git + GitHub (private repo) for source control
+
+Progression:
+
+* Generated a React project using Vite.
+* Implemented reels and symbol lists (12 symbols).
+* Added spin logic (timers/intervals) to simulate reels rolling and stopping.
+* Added win evaluation and payout rules.
+* Added credits/bet and adjusted the win logic to use the bet.
+* Added optional extra win lines and changed cost per spin accordingly.
+* Integrated audio (SFX + looping music) and added volume controls.
+* Styled the UI to match the example and added the lofi background image.
+
+Issues / what I got stuck on:
+
+* npm package name error initially because the folder/project name contained spaces/uppercase. Fixed by using a valid npm package name (e.g. casino-slot).
+* Browser autoplay restriction: background music may not start until after a user interaction. Solved by using a Music toggle button (user-initiated playback).
+* UI “bouncy/flimsy” feeling during spin due to CSS animations. Solved by removing movement-based animations and using glow-only effects.

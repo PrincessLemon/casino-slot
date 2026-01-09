@@ -1,0 +1,20 @@
+Requirements:
+
+* Node.js installed (includes npm)
+
+Steps
+
+1. Download/clone the repository.
+2. Open a terminal in the project folder (where package.json is located).
+
+Install dependencies:
+
+* npm install
+
+
+Start the development server:
+
+* npm run dev
+
+
+Open the local URL shown in the terminal (usually http://localhost:5173/).
